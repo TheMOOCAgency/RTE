@@ -1,0 +1,17 @@
+ {
+ 
+	"type_of_course":"",
+	"title_of_course":"COMPRENDRE LES CHAMPS ÉLECTROMAGNÉTIQUES D'EXTREMEMENT BASSE FRÉQUENCE",
+	"description_of_course":"Les champs électriques sont produits par des variation dans le voltage: plus le voltage est élevé, plus le champ qui en résulte est intense. Ils surviennent même si le courant ne passe pas. Au contraire les champs magnétiques apparaissent lorsque le courant circule:",
+    "module_type":"module",
+	"module_video_type":"épisode",
+    "total_time":"60 minutes",
+    "total_weeks":"4 modules",
+    "total_docs":"14 documents",
+    "total_videos":"14 vidéos",
+	"name_of_module":"module"
+	
+	 
+}
+
+

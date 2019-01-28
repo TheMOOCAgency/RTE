@@ -1,0 +1,52 @@
+[
+   {
+     "id":1,
+	 "weeks_title":"Notions essentielles sur les champs électromagnétiques ", 
+	 "nbrSeq":4,
+	 "time":12,
+      "weeks_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "video_link":[
+         "301617772",
+         "301617920",
+         "301618033",
+		 "301618151"
+      ]
+   },
+   {
+     "id":2,
+	  "weeks_title":"Introduction aux études biomédicales ",
+    "nbrSeq":3,
+	 "time":13,
+      "weeks_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "video_link":[
+         "305044444",
+         "305045044",
+         "305045293"
+      ]
+   },
+   {
+     "id":3,
+	  "weeks_title":"Les résultats des études biomédicales sur les CEM basse fréquence ",
+   "nbrSeq":4,
+	 "time":19,
+      "weeks_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "video_link":[
+         "305046540",
+         "305046787",
+         "305047129",
+         "305047496"
+      ]
+   },
+   {
+     "id":4,
+	  "weeks_title":"La réglementation",
+		"nbrSeq":3,
+	 "time":11,
+      "weeks_description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "video_link":[
+         "305047871",
+         "305048004",
+         "305048132"
+      ]
+   }
+   ]

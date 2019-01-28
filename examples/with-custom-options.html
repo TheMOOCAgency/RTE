@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" href="../src/video.popup.css">
+
+    </head>
+    <body>
+
+
+
+        <a id="video" video-url="https://www.youtube.com/watch?v=-fac_iJ8Nw8">
+            Youtube
+        </a>
+        <a id="video2" video-url="https://vimeo.com/229490822">
+            Vimeo
+        </a>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="../src/video.popup.js"></script>
+
+        <script>
+            $(function(){
+                $("#video").videoPopup({
+                    autoplay: 1,
+                    controlsColor: 'white',
+                    showVideoInformations: 0,
+                    width: 1000,
+                    customOptions: {
+                        rel: 0,
+                        end: 60
+                    }
+                });
+				$("#video2").videoPopup();
+            });
+        </script>
+
+    </body>
+</html>

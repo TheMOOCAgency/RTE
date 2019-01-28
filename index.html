@@ -1,0 +1,159 @@
+<!doctype html>
+<html id="html" lang="en" style="overflow-x: hidden;overflow-y: hidden;">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700">
+      <link rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css">
+      <!-- FontAwesome Icons -->
+      <link rel="stylesheet" href="icons/Iconsmind__Ultimate_Pack/Line/styles.min.css">
+      <link rel="stylesheet" href="src/video.popup.css">
+      <script src="js/jquery-3.3.1.js"></script> 
+      <script src="src/video.popup.js"></script>
+      <script src="dist/jquery.loading-indicator.js"></script>
+      <script src="dist/jquery.flip.min.js"></script>
+      <script>
+         $(function() {
+         	var homeLoader = $('body').loadingIndicator({
+         		useImage: false,
+         	}).data("loadingIndicator");
+         	
+         	setTimeout(function() {
+         		homeLoader.hide();
+         		$('#appBind').css('opacity','1');
+         		$('#sidebar-nav').css('opacity','1');
+         		$('#homeClick').css('opacity','1');
+         		$('#col-main').css('opacity','1');
+         		$('#sidebar-bg').css('opacity','1');
+         		$('#html').css('overflow-y','auto');
+         	}, 5000);
+         	
+         });
+      </script>
+      <link type="text/css" rel="stylesheet" href="dist/jquery.loading-indicator.css" />
+      <title>Interface de visionnage</title>
+   </head>
+   <style>
+      .logo-facebook a {
+      display: block;
+      width: 120px;
+      height: 31px;
+      background-image: url('src/img/icons/s1.png');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      }
+      .logo-facebook a:hover {
+      background-position: 0 -31px;
+      }
+      .overGreen:hover{
+      background-color:#CBE01B;
+      background:#CBE01B;
+      }
+      .flip {
+      width:100%;
+      }
+      .flip img {
+      }
+      .flip .back {
+      background: transparent;
+      color: black;
+      text-align: center;
+      width: 59%;
+      }
+   </style>
+   <body style="background-color:#f3f3f3" >
+      <div class="fakeloader" style="z-index:99999"></div>
+      <div id="sidebar-bg">
+         <script></script>
+         <header id="videohead-pro" class="sticky-header" style="z-index:99">
+            <div id="video-logo-background">
+               <a id="homeClick"><img src="src/img/logo.png"></a>
+            </div>
+            <!-- close .video-search-header -->
+            <div id="mobile-bars-icon-pro" class="noselect"><i class="fas fa-bars"></i></div>
+      </div>
+      <!-- close #header-user-notification -->
+      <div class="clearfix"></div>
+      <nav id="mobile-navigation-pro">
+      <ul id="mobile-menu-pro">
+      <li class="current-menu-item"> 
+      <a href=""> <span class="icon-Calendar"></span> Semaine 1 </a>
+      <li>
+      <li> 
+      <a href=""> <span class="icon-Calendar"></span> Semaine 2 </a>
+      </li>
+      <li> 
+      <a href=""> <span class="icon-Calendar"></span> Semaine 3 </a> 
+      </li>
+      <li> 
+      <a href=""> <span class="icon-Calendar"></span> Semaine 4 </a> 
+      </li>
+      <li> 
+      <a href=""> <span class="icon-Calendar"></span> Semaine 5 </a> 
+      </li>
+      </ul>
+      </nav>
+      </header>
+      <nav id="sidebar-nav">
+         <ul id="vertical-sidebar-nav" class="sf-menu">
+            <li class="normal-item-pro current-menu-item ">
+               <a id="1"  onmouseleave="dontWhiteMyIcon(this.id)" onmouseover = "whiteMyIcon(this.id)" onclick="selectMyIcon(this.id);masterBindThis2(this.id)" class="overGreen">
+                  <img data-select=false class="pngIconMe" height='82px' width='56px' src="src/img/icons/s1.png">
+                  <p class="pWeeks"> 
+                  </p>
+               </a>
+            </li>
+            <li class="normal-item-pro current-menu-item ">
+               <a id="2" d onmouseleave="dontWhiteMyIcon(this.id)" onmouseover = "whiteMyIcon(this.id)" onclick="selectMyIcon(this.id);masterBindThis2(this.id)" class="overGreen">
+                  <img data-select=false class="pngIconMe" height='82px' width='56px' src="src/img/icons/s2.png">
+                  <p class="pWeeks">
+                  </p>
+               </a>
+            </li>
+            <li class="normal-item-pro current-menu-item ">
+               <a id="3" onmouseleave="dontWhiteMyIcon(this.id)" onmouseover = "whiteMyIcon(this.id)" onclick="selectMyIcon(this.id);masterBindThis2(this.id)"  class="overGreen">
+                  <img data-select=false class="pngIconMe" height='82px' width='56px' src="src/img/icons/s3.png">
+                  <p class="pWeeks">
+                  </p>
+               </a>
+            </li>
+            <li class="normal-item-pro current-menu-item ">
+               <a id="4"  onmouseover = "whiteMyIcon(this.id)" onmouseleave="dontWhiteMyIcon(this.id)" onclick="selectMyIcon(this.id);masterBindThis2(this.id)" class="overGreen">
+                  <img data-select=false class="pngIconMe" height='82px' width='56px' src="src/img/icons/s4.png">
+                  <p class="pWeeks"> 
+                  </p>
+               </a>
+            </li>
+         </ul>
+         <div class="clearfix"></div>
+      </nav>
+      <main id="col-main" class="col-mainJack" >
+         <a id="video2" video-url="https://vimeo.com/229490822"> </a>
+         <div class="row" id="appBind" >
+            <!-- <button onclick='flip()'>flip the card</button> <section class='container'>   <div class='card' onclick='flip()'>     <div class='front'>1</div>     <div class='back'>2</div>   </div> </section> -->
+         </div>
+         <script>
+            $('#appBind').css('opacity','0');
+            $('#sidebar-nav').css('opacity','0');
+            $('#homeClick').css('opacity','0');
+            $('#col-main').css('opacity','0');
+            $('#sidebar-bg').css('opacity','0');
+            
+            	
+         </script>
+      </main>
+      </div>
+      <script src="js/libs/popper.min.js" defer></script>
+      <script src="js/libs/vimeo.js" defer></script>
+      <script src="js/libs/bootstrap.min.js" defer></script>
+      <script src="js/navigation.js" defer></script>
+      <script src="js/jquery.flexslider-min.js" defer></script>
+      <script src="js/jquery-asRange.min.js" defer></script>
+      <script src="js/circle-progress.min.js" defer></script>
+      <script src="js/afterglow.min.js" defer></script>
+      <script src="js/script.js" defer></script>
+      <script src="js/script-dashboard.js" defer></script>
+   </body>
+</html>

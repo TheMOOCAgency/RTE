@@ -1,0 +1,153 @@
+
+// video pop up control 
+$(function() {
+    $("#video").videoPopup({
+        autoplay: 1,
+        controlsColor: 'white',
+        showVideoInformations: 0,
+        width: 1000,
+        customOptions: {
+            rel: 0,
+            end: 60
+        }
+    });
+    $("#video2").videoPopup();
+});
+
+
+// video pop up control 
+
+
+
+var videoUrl = 'http://www.vimeo.com/292473063';
+var endpoint = 'https://www.vimeo.com/api/oembed.json';
+var callback = 'embedVideo';
+var url = endpoint + '?url=' + encodeURIComponent(videoUrl)
+var apiKey = "574df4c5ba89341dead9ce522260d8d429cfdd39"
+
+var videoArray= jQuery.getJSON("https://www.vimeo.com/api/oembed.json?url=http%3A%2F%2Fwww.vimeo.com%2F292473063");
+videoArray.done(function() {
+  console.log( "okVid" );
+  courseArrayObject = courseArray.responseJSON;
+});
+
+// video pop up control 
+
+
+//native function
+function createWeeksObjectVideo(weeksId,weeksTitle,videoArrayId,videoNumber){
+	
+	this.weeksId=weeksId
+	this.weeksTitle = weeksTitle
+	this.videoArrayid = videoArrayId
+	this.videoNumber = videoNumber
+}
+
+function domAppendVideo(className,videoObject,target){
+	var divContainer="<div class='videoMiniContainer&nbsp"+className+"'>"+videoObject.title+"</div>"
+	var targetB="#"+target
+	$(targetB).append(divContainer)
+	
+} 
+function video(title, video_id, thumbnail_url, author_name) {
+	this.title = title
+	this.video_id =  video_id
+	this.thumbnail_url = thumbnail_url
+	this.author_name = author_name
+    
+}
+
+
+function jsonGetToObject(id,classOfWeeks,target) {
+	var classOfWeeks=this.classOfWeeks
+	var target=this.target
+	var id=this.id
+
+      $.getJSON('https://vimeo.com/api/oembed.json?url=http%3A%2F%2Fwww.vimeo.com%292473063', {
+        format: "json",
+        width: "640"
+      },
+      function(data) {
+		var videoOBj = new video(data.title, data.video_id, data.thumbnail_url, data.author_name)
+		alert(data)
+		domAppendVideo(classOfWeeks,videoOBj,target)
+      });
+  }; 
+
+
+
+
+  
+//native function
+
+// Json charger User Project
+
+var courseArray= jQuery.getJSON("src/json/weeks.json");
+var courseArrayObject = courseArray.responseJSON;
+var jqxhr = $.getJSON( "src/json/weeks.json", function() {
+  console.log( "success" );
+})
+  .done(function() {
+    console.log( "second success" );
+  })
+  .fail(function() {
+    console.log( "error" );
+  })
+  .always(function() {
+    console.log( "complete" );
+  });
+
+jqxhr.done(function() {
+  console.log( "second complete" );
+  
+  getInfo();
+});
+	var semaine_prequel
+	var video_link
+	
+	// Get info
+	function getInfo(){
+	
+	courseArrayObject = courseArray.responseJSON;
+	var semaine_prequel
+	var video_link
+	var courseArrayObjectLength=courseArrayObject.length
+	
+	for (i=0;i<courseArrayObjectLength;i++){
+	
+		semaine_prequel=courseArrayObject[i].semaine_prequel
+		var classCreator="weeks"+i
+		var test = "test"
+		video_link=courseArrayObject[i].video_link
+		video_linkLength=courseArrayObject[i].video_link.length
+			for(j=0;j<video_linkLength;j++){
+				 var jee = video_link[j]
+				 jsonGetToObject(jee,classCreator,test)
+	}
+	}
+	}
+	
+	
+	// Get info
+	
+	
+	
+	
+
+
+// Json charger User Project
+
+$(document).ready(function() {
+
+    $.getJSON('https://vimeo.com/api/oembed.json?url=http%3A%2F%2Fwww.vimeo.com%2F292473063', {
+        format: "json",
+        width: "640"
+      },
+      function(data) {
+        console.log(data.title)
+        console.log(data)
+      });
+  });
+
+
+
